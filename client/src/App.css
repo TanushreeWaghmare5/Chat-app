@@ -1,0 +1,162 @@
+/* Updated Chat UI Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    margin: 0;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.chat-box {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(12px);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.messages-container {
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(0, 198, 255, 0.8);
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 10px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.message-box strong {
+    color: #fff;
+}
+
+.timestamp {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    align-self: flex-end;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.chat-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.send-button {
+    background: #00c6ff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+/* Login Box Styling */
+.login-box {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(12px);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    font-size: 18px;
+}
+
+.login-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-box button {
+    background: #00c6ff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.login-box button:hover {
+    background: #0072ff;
+}
+
